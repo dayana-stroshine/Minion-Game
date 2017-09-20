@@ -1,20 +1,13 @@
-# week-4-game
+#Collect the Same Number of Minions as Gru
 
-To-Do
+There are four minions.
 
-Appearance
--Make the jumbotron smaller and center text
--add a score keeping panel/container to the right side of the jumbotron
--resize the images to match Bob & Carl images
-- change color theme
-	- background yellow
-	- jumbotron blue
-	-change font
+Each minion has a hidden value. 
 
+By clicking on a minion you add that amount of minions to your collection.
 
-Functionality
--assign a value to each image
--count image values when each image is clicked
--show total count
--show win and lose messages
--adjust score keeping panel to count wins/losses 
+You win the game by collecting the same number of minions as Gru.
+
+You lose the game if your total number of minions is more than Gru. 
+
+Each time the game restarts, the value of each Minion changes as well.
