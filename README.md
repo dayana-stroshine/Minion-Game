@@ -1,4 +1,4 @@
-#Collect the Same Number of Minions as Gru
+Objective: Collect the Same Number of Minions as Gru
 
 There are four minions.
 
