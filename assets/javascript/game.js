@@ -1,14 +1,18 @@
+var counter = 0;
+var score = 0;
 
+$("#number-collected").text(counter); //I know this is probably not the best way to do this. 
+$("#win-score").text(score);         //I have it overriding on line 160, 
+$("#lose-score").text(score);        //but if I don't add this then it doesn't start at 0 because
+                                     //it's a global varaible
 
 // ************************************** Comp Total:Gru **************************************//
 
-var counter = 0
-
 var CompRandomNum = Math.floor(Math.random() * 102) +19;
 
-	function CompRandomNumResult() {
+function CompRandomNumResult() {
 
-		 Math.floor(Math.random() * 10)
+		Math.floor(Math.random() * 10)
 		
 		}
 		
@@ -144,18 +148,38 @@ var CompRandomNum = Math.floor(Math.random() * 102) +19;
   });
 
 
-// ************************************** User Score **************************************//
+// ********************************** User Results and Game Reset **********************************//
 
 function checkScore(){
-	console.log("Inside Check Score")
+	console.log("Generating New Score", counter)
 	if (counter === CompRandomNum) {
-      alert("You win!");
+      alert("You Beat Gru, Nice!");
+		reset();
+		$("#win-score").text(++score);
+
     }
 
     else if (counter > CompRandomNum) {
-      alert("You lose!!");
+      alert("Gru Wins, You Lose!");
+		reset();
+		$("#lose-score").text(++score);
     }
+
+$("#number-collected").text(counter);
 
 }
 
-$("#number-collected").text(counter);
+
+// ********************************** User Score **********************************//
+
+
+function reset(){
+	counter = 0 ;
+	CompRandomNum = 0;
+		
+
+    }
+
+
+
+
