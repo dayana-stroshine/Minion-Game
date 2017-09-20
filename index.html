@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Minions Collector</title>
+
+<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!--Link to CSS-->	
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/reset.css">
+
+</head>
+
+
+<body>
+
+	<div class ="container">
+
+<!--********************************** Row 1 **********************************:-->
+		<div class="row">
+<!-- Title-->
+				<div class="jumbotron">
+				  <h1 class="display-3 title">Minion Collector</h1>
+<!--Score Keeper Box-->
+				  <div class="scoreKeeper">
+				  	&nbsp;
+				  	<div>Wins: </div>
+				  	&nbsp;&nbsp;&nbsp;
+				  	<div>Losses: </div>
+				  </div>
+<!--Instructions-->
+				  	<p class="lead">Collect the Same Number of Minions as Gru!</p>
+					  	<hr class="my-4">
+		    			There are four minions, each minion has a hidden value. By clicking on a minion you add that amount of minions to your collection.<br>
+					  	<br>You <strong>WIN</strong> the game by collecting the same number of minions as Gru!&nbsp;&nbsp;&nbsp;You <strong>LOSE</strong> the game if your total number of minions is more than Gru.</br> 
+					  	<br> Each time the game restarts, the value of each Minion changes as well.</br>
+				</div>
+				  	
+		</div>
+
+
+<!--********************************** Row 2 **********************************:-->
+		<div class="row">
+<!-- Gru Total-->
+			<div class="col-md-6">
+				<div class="gruTotal">
+			 		<h4>Gru has collect <span id="number-to-match"></span> Minions</h4>
+			 	</div>
+			</div>
+
+<!--Total User Guesses-->
+			<div class="col-md-6">
+				<div class="userTotal">
+			 		<h4>You've Collected <span id="number-collected"></span> Minions</h4>
+			 	</div>
+			</div>
+		</div>
+
+<!--********************************** Row 3 **********************************:-->
+		<div class ="row">
+
+<!--Gru Image-->
+				<div class ="col-md-6">
+			  		<div id="Gru">
+			  			<img src="assets/images/Gru.jpg"  alt="Gru" class="img-thumbnail gru">
+			  		</div>
+			  	</div>
+
+<!--Kevin Image-->
+				<div class ="col-md-3">
+			  		<div id="Kevin">
+			  			<img src="assets/images/Kevin.jpg"  alt="Kevin" class="img-thumbnail">
+			  		</div>
+			  	</div>
+
+<!--Bob Image-->
+			 	<div class ="col-md-3">
+			  		<div id="Bob">
+			  			<img src="assets/images/Bob.jpg" alt="Bob" class="img-thumbnail">
+			  		</div>
+			  	</div>
+
+<!--Stuart Image-->
+			 	<div class ="col-md-3">
+			  		<div id="Stuart">
+			  			<img src="assets/images/Stuart.jpg" alt="Stuart" class="img-thumbnail">
+			  		</div>
+			  	</div>
+
+<!--Carl Image-->
+			 	<div class ="col-md-3">
+			  		<div id="Carl">
+			  			<img src="assets/images/Carl.jpg" alt="Carl" class="img-thumbnail">
+			  		</div>
+			  	</div>
+		</div>
+
+	</div>
+
+<!--********************************** Javascript/JQuery Links **********************************:-->
+
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
+
+
+</body>
+</html>

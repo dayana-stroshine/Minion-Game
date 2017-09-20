@@ -1,0 +1,64 @@
+.jumbotron{
+	padding-top: 0px !important;
+	padding-bottom: 0px !important;
+	padding-right: 25px !important;
+	margin-top: 25px !important;
+	background-color: blue;
+	border-color: blue;
+	border-style: solid;
+    border-width: 5px;
+	color: white;
+	font-family: Chalkduster, fantasy !important;
+	border-radius: 25px !important;
+}
+
+body{
+	background-image: url(https://s-media-cache-ak0.pinimg.com/originals/59/4f/3a/594f3a85a9c21647f25a76ad8861306a.png);
+}
+
+.title{
+	width: 75%;
+	display: inline-block;
+}
+
+.scoreKeeper{
+	display: inline-block;
+	float: right;
+	background-color: white;
+	color: blue;
+	border-radius: 10px;
+	width:150px;
+	height:75px;
+	padding-left: 5px;
+	margin-top: 10px;
+}
+
+.img-thumbnail {
+	border-color: blue;
+	border-style: solid;
+	border-width: 5px;
+	border-radius: 25px;
+    width:  200px !important;
+    height: 175px !important;
+
+}
+
+.gru{
+	width:  350px !important;
+    height: 350px !important;
+
+}
+
+.gruTotal{
+	color: blue;
+	font-family: Chalkduster, fantasy !important;
+	font-size: bold;
+	padding: 10px;
+}
+
+.userTotal{
+	color: blue;
+	font-family: Chalkduster, fantasy !important;
+	font-size: bold;
+	padding: 10px;
+}
